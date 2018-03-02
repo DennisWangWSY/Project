@@ -1,0 +1,65 @@
+
+div.form_style {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 50%;
+  box-shadow: 5px 5px 5px gray;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  background-color: #C4EEFF;
+  display: none;
+}
+
+/*///// Form /////*/ 
+
+form.form_style {
+	padding: 20px;
+	font-size: 11pt;
+}
+
+form.form_style div {
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+form.form_style label {
+    width:50%;
+   	font-size: 120%;
+    line-height:24px;
+    font-weight:bold;
+    margin-left: 25%;
+}
+.countdown {
+  color :red;
+  font-size: 100%;
+}
+
+.submit {
+	text-align: center;
+}
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 500px;
+  overflow: hidden;
+  text-align: center;
+}
+button {
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
+  font-size: 120%;
+  color: black;
+}
+button.correct {
+  background-color: green;
+  color: black;
+}
+button.wrong {
+  background-color: red;
+  color: black;
+}
