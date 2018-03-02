@@ -1,4 +1,5 @@
 <?php
+
 include("include/util.php");
 $content = trim($_POST["content"]);
 $domain = trim($_POST["domain"]);
