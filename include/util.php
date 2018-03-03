@@ -32,12 +32,14 @@ function recordQuiz($record) {
 	return $arr;
 }
 function recordCorrect($record) {
-	$quiz = explode("," , $record[2]);
 	$arr = array();
-	for($i=0; $i<count($quiz); $i++) {
-		array_push($arr, explode("/", $quiz[$i])[1]);
+	if(count($record)>2){ 
+		$quiz = explode("," , $record[2]);
+		for($i=0; $i<count($quiz); $i++) {
+			array_push($arr, explode("/", $quiz[$i])[1]);
+		}
+		sort($arr);
 	}
-	sort($arr);
 	return $arr;
 }
 function quizdbpath() {
