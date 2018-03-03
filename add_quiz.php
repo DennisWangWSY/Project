@@ -2,6 +2,7 @@
 include("include/util.php");
 $content = trim($_POST["content"]);
 $domain = trim($_POST["domain"]);
+//useless line
 $diff = trim($_POST["diff"]);
 $choiceA = "A---" . trim($_POST["choiceA"]);
 $choiceB = "B---" . trim($_POST["choiceB"]);
