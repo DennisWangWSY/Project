@@ -55,11 +55,3 @@ button {
   font-size: 120%;
   color: black;
 }
-button.correct {
-  background-color: green;
-  color: black;
-}
-button.wrong {
-  background-color: red;
-  color: black;
-}

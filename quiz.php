@@ -10,6 +10,7 @@ shuffle($num);
 	<meta charset="utf-8" />
 	<link href="css/main.css" type="text/css" rel="stylesheet" />
 	<link href="css/form.css" type="text/css" rel="stylesheet" />
+	<link href="css/button.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="js/quiz.js"></script>
 	<script type="text/javascript" src="js/simpleajax.js"></script>
 </head>
