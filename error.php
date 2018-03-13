@@ -5,22 +5,22 @@
 	$type = $_GET["type"];
 	if ( $type === "login1" ) {
 		$message = "Your login is incorrect";
-		$action = "sign_in_form.php";
+		$action = "home.php";
 	} elseif ( $type === "login2" ) {
 		$message = "Your  password is incorrect";
-		$action = "sign_in_form.php";	
+		$action = "home.php";	
 	} elseif ( $type === "firstname" ) {
 		$message = "First name is incorrect";
-		$action = "home.php";
+		$action = "signup.php";
 	} elseif ( $type === "lastname" ) {
 		$message = "Last name is incorrect";
-		$action = "home.php";
+		$action = "signup.php";
 	} elseif ( $type === "logup" ) {
 		$message = "Login is incorrect";
-		$action = "home.php";
+		$action = "signup.php";
 	} elseif ( $type === "pwdup" ) {
 		$message = "Password is incorrect";
-		$action = "home.php";		
+		$action = "signup.php";		
 	} else { # type === nologin
 		$message = "You must sign in to use this feature";
 		$action = "sign_in_form.php";

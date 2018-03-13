@@ -3,11 +3,12 @@ div.form_style {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  margin-top: 20px;
   width: 50%;
   box-shadow: 5px 5px 5px gray;
-  /* border-radius: 20px; */
+  border-radius: 20px; 
   overflow: hidden;
-  background-color: #C4EEFF;
+  background-color: #e7eaec;
   display: none;
 }
 
@@ -53,5 +54,13 @@ button {
   border-radius: 10px 10px 10px 10px;
   background-color: white;
   font-size: 120%;
+  color: black;
+}
+button.correct {
+  background-color: green;
+  color: black;
+}
+button.wrong {
+  background-color: red;
   color: black;
 }

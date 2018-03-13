@@ -15,29 +15,6 @@ body {
 	padding: 10px 5px 20px 10px
 }
 
-#top_banner form {
-	padding-top: 10px;
-}
-
-#top_banner div div {
-	font-size: 12pt;
-}
-
-#top_banner div * {
-	margin-right: 5px;
-}
-
-#top_banner img {
-	float: left;
-	width: 70px;
-	margin-top: 0px;
-}
-
-#logo {
-	font-weight: bolder;
-	border: dotted 1px #6ec2fa;
-	padding: 1px;
-}
 
 #content {
 	margin-left: 20px;
@@ -106,6 +83,7 @@ div.list li {
 
 .todo {
 	margin-left: 5px;
+	font-family: Georgia;
 }
 .done {
 	text-decoration: line-through;
@@ -125,10 +103,6 @@ input[type="checkbox"] {
 
 input[type="text"] {
 	border: none;
-}
-
-#top_banner input.button {
-	font-size: 12pt;
 }
 
 /*#logout {

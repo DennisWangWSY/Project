@@ -30,6 +30,6 @@ if(!preg_match("/^[A-Za-z]+(-[A-Za-z]+)?$/", $first)){
 	mkdir($dirpath . "/records");
 	$info = $password . "\n" . $first . "\n" . $last;
 	file_put_contents($dirpath . "/info.txt", $info);
-	header("Location: sign_in_form.php");
+	header("Location: home.php");
 }
 ?>

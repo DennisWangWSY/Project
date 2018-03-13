@@ -1,44 +1,56 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>2DO</title>
-    <meta charset="utf-8" />
-    <link href="css/main.css" type="text/css" rel="stylesheet" />
-    <link href="css/form1.css" type="text/css" rel="stylesheet" />
-  </head>
 
-<body>
-	
-	<div id="top_banner">
-		<form method="post" action="sign_in_form.php">
-			<div>
-				<span class="left">Welcome to <span id="logo">2DO</span> your personal todo-lists manager!</span>
-			</div>
-			<div class="right">
-				<input class="button" type="submit" value="Sign-in" title="Sign-in"/>
-			</div>
-		</form>
-	</div>
-	
-	<div class="form_style">
- 
-		<form class="form_style" method="post" action="sign_up.php">
-	
-			<div>Fill the form to sign-up!</div>
-	
-			<label for="firstname">First name</label><input name="firstname" type="text" required="required"/><br />
-			<label for="lastname">Last name</label><input name="lastname" type="text" required="required"/><br />
+<head>
 
-			<div>Choose a login and a password</div>
-	
-			<label for="login">Login</label><input name="login" type="text" required="required"/><br />
-			<label for="password">Password</label><input name="password" type="password" required="required"/><br />	
-	
-			<div class="submit">
-				<input class="button" type="submit" value="Sign-up" />
-			</div>
-		</form>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	</div>
+    <title>Quizeme Register</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen   animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">QuizzMe</h1>
+
+            </div>
+            <h3>Register to Quizeme</h3>
+            <p>Create account to join the quize.</p>
+            <form class="m-t" role="form" method="post" action="sign_up.php">
+                <div class="form-group">
+                    <input name="firstname" type="text" class="form-control" placeholder="Firstname" required="">
+                </div>
+                <div class="form-group">
+                    <input name="lastname" type="text" class="form-control" placeholder="Lastname" required="">
+                </div>
+                <div class="form-group">
+                    <input name="login" type="text" class="form-control" placeholder="Login" required="">
+                </div>
+                <div class="form-group">
+                    <input name="password" type="password" class="form-control" placeholder="Password" required="">
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">Register</button>
+
+                <p class="text-muted text-center"><small>Already have an account?</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="home.php">Login</a>
+            </form>
+            <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small> </p>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

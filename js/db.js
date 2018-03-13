@@ -26,7 +26,7 @@ window.onload = function() {
 		} else if(!choiceD) {
 			alert("Please input the choice D");
 			return false;
-		} else if(!answers) {
+		} else if(answers.length==0) {
 			alert("Please choose at least one correct answer");
 			return false;
 		}
@@ -53,9 +53,17 @@ window.onload = function() {
 		var choiceD = document.querySelector("[name='D']").value.trim();
 		var quiz_id = request.responseText;
 
+		var newdiv1 = document.createElement("div");
+		newdiv1.className = "ibox";
+		newdiv1.setAttribute("quiz_id", quiz_id);
+		var newdiv2 = document.createElement("div");
+		newdiv2.className = "ibox-content";
+		var newdiv3 = document.createElement("div");
+		newdiv3.setAttribute("id", "content");
 		var newform = document.createElement("form");
+		
 		newform.className = "list left";
-		newform.setAttribute("quiz_id", quiz_id);
+		
 		// var newinput = document.createElement("input");
 		// newinput.setAttribute("type", "hidden");
 		// newinput.setAttribute("name", "todo_id");
@@ -64,8 +72,9 @@ window.onload = function() {
 		newdiv.className = "quiz_title";
 		newdiv.innerHTML = domain + " -- Difficulty: " + diff;
 		var newdelete = document.createElement("input");
-		newdelete.className = "button right";
+		newdelete.className = "btn btn-warning btn-sm";
 		newdelete.setAttribute("type", "submit");
+		newdelete.setAttribute("id", "delete_quiz");
 		newdelete.setAttribute("name", "delete_quiz");
 		newdelete.value = "X";
 		newdelete.setAttribute("quiz_id", quiz_id);
@@ -108,11 +117,22 @@ window.onload = function() {
 		newul.appendChild(newli5);
 
 		newdiv.appendChild(newdelete);
+		newdiv1.appendChild(newdiv2);
+		newdiv2.appendChild(newdiv3);
+		newdiv3.appendChild(newform);
 		newform.appendChild(newdiv);
 		newform.appendChild(newul);
 
-		var content = document.getElementById("content");
-		content.appendChild(newform);
+		var left_form=document.getElementById("left").getElementsByTagName("form");
+		var right_form=document.getElementById("right").getElementsByTagName("form");
+		var content_right = document.getElementById("right");
+		var content_left = document.getElementById("left");
+
+		if(left_form.length > right_form.length){
+			content_right.appendChild(newdiv1);
+		}else{
+			content_left.appendChild(newdiv1);
+		}
 	}
 	var addquizButton = document.querySelector("[value='Add quiz']");
 	addquizButton.onclick = add_quiz;
@@ -133,7 +153,7 @@ window.onload = function() {
 		if(response=="no") {
 			alert("Cannot delete quiz! (At least 5 quiz.)");
 		} else {
-			var formToDelete = document.querySelector("form[quiz_id='"+response+"']");
+			var formToDelete = document.querySelector("div[quiz_id='"+response+"']");
 			formToDelete.parentNode.removeChild(formToDelete);
 		}
 
@@ -142,3 +162,4 @@ window.onload = function() {
 	for(var i=0; i<deletequizButtons.length; i++)
 		deletequizButtons[i].onclick = delete_quiz;
 };
+	
