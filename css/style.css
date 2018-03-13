@@ -189,4 +189,12 @@ h5 {
 
 #quiz_difficulty{
   text-align: center;
+  font-family: 'New Century Schoolbook';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#dividedline{
+  width: 1px;
+  color: #313433;
 }

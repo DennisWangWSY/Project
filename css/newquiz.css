@@ -1,5 +1,5 @@
 #newquizdiv{
-    position: fixed;
+    float: right;
     top: 5%;
     right: 0%;
     width: 20%;

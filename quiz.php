@@ -63,7 +63,7 @@ shuffle($num);
 					<span id= "countdown_gly" class="glyphicon glyphicon-time"></span>
 					<div id="quizing_number">Quiz #<?= $i?></div>
 					<div id="quiz_dipth"></div>
-					<h1 id="quiz_difficulty">Difficulty: <?= quiz_difficulty($quiz);?> /10
+					<h1 id="quiz_difficulty" class="bg-info">Difficulty: <?= quiz_difficulty($quiz);?> /10
 					<span id="quiz_domain"  class="bg-info">Domain: <?= quiz_domain($quiz);?></h1>
 					<div id="quize_centent"><?= quiz_content($quiz);?></div>
 		
