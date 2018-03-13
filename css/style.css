@@ -162,4 +162,8 @@ h5 {
 }
 .row {
   width: 80%;
+  float: left;
+}
+.footer {
+  overflow: none;
 }

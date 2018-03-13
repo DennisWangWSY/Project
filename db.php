@@ -28,7 +28,15 @@ $k = 0;
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     <script src="js/simpleajax.js"></script>
     <script src="js/db.js"></script>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
 
 </head>
 
@@ -39,7 +47,7 @@ $k = 0;
             <div>
                 <span id="dbhead1">Welcome to Quize Home.     </span>
                 <div id="logout">
-                 <a href="my.php">
+                   <a href="my.php">
                     <i id="dbhead2" class="fa fa-sign-out"></i><span id="dbhead2">    Home</span>
                 </a>
             </div>    
@@ -107,26 +115,7 @@ $k = 0;
                 </div>
             </div>
             <div id="newquizdiv">
-                <!-- <form id="newQuiz" class="form-horizontal">
-                    <div class="form-group"><label class="col-sm-2 control-label">Quiz:</label ><div class="col-sm-10"><textarea name="content"></textarea></div></div>
-                    <div class="form-group"><label class="col-sm-2 control-label">Domain:</label><div class="col-sm-10"> <input name="domain" class="domain" /></div></div>
-                    <div class="form-group"><label class="col-sm-2 control-label">Diff:</label><div class="col-sm-10"><input name="difficulty" type="range" min="1" max="10" step="1" value="1" class="difficulty" /></div></div>
-                    <div class="form-group"><label class="col-sm-2 control-label">Choice A:</label><div class="col-sm-10"><input name="A" class="choice" /></div></div>
-                    <div class="form-group"><label class="col-sm-2 control-label">Choice B:</label><div class="col-sm-10"><input name="B" class="choice" /></div></div>
-                    <div class="form-group"><label class="col-sm-2 control-label">Choice C:</label><div class="col-sm-10"><input name="C" class="choice" /></div></div>
-                    <div class="form-group"><label class="col-sm-2 control-label">Choice D:</label><div class="col-sm-10"><input name="D" class="choice" /></div></div>
-                    <div class="form-group"><label class="col-sm-2 control-label">Answer:</label>
-                        <div class="col-sm-10">
-                            <div><label>A<input type="checkbox" name="choice" value="A" /></label>
-                             <label>B<input type="checkbox" name="choice" value="B" /></label>
-                             <label>C<input type="checkbox" name="choice" value="C" /></label>
-                             <label>D<input type="checkbox" name="choice" value="D" /></label>
-                         </div>
-                     </div>
-                 </div>
-                 <input id="addquizButton" class="btn btn-info" type="submit" value="Add quiz" title="add a new quiz"/>
-             </form> -->
-             <div id="contact-form" class="clearfix">
+               <div id="contact-form" class="clearfix">
                 <h1>Add new Quiz</h1>
                 <h2>Fill in the form here to add your new quiz to our Quiz Database!</h2>
                 <form method="post">
@@ -167,28 +156,8 @@ $k = 0;
                 </form>
             </div>
         </div>
-        <div class="footer">
-            <div class="pull-right">
-                10GB of <strong>250GB</strong> Free.
-            </div>
-            <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2015
-            </div>
-        </div>
     </div>
 </div>
-
-
-
-<!-- Mainly scripts -->
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
-<!-- Custom and plugin javascript -->
-<script src="js/inspinia.js"></script>
-<script src="js/plugins/pace/pace.min.js"></script>
 
 </body>
 
