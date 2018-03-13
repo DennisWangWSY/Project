@@ -30,12 +30,6 @@ shuffle($num);
 						print "for " . get_name($_SESSION["login"]);
 					?>
 				</span>
-				<div class="checkbox checkbox-primary">
-					<input type="checkbox">
-					<label>
-						Primary
-					</label>
-				</div>
 			</div>
 		</form>
 	</div>
@@ -70,15 +64,26 @@ shuffle($num);
 					<div>Difficulty: <?= quiz_difficulty($quiz);?> /10</div>
 					<div>Domain: <?= quiz_domain($quiz);?></div>
 					<input type="hidden" name="id" value="<?= $num[$i-1]?>"/>
-					<div class="checkbox checkbox-primary">
-						<label>
-							<input type="checkbox" name="choice" value="A" /><?= quiz_choicesA($quiz);?>
-						</label>
-					</div>
-					<label><input type="checkbox" name="choice" value="A" /><?= quiz_choicesA($quiz);?></label><br />
+					<label class="demo--label">
+						<input class="demo--radio" type="checkbox" name="choice" value="A">
+						<span class="demo--checkbox demo--radioInput"></span><?= quiz_choicesA($quiz);?></label>
+					</label>
+					<label class="demo--label">
+						<input class="demo--radio" type="checkbox" name="choice" value="B">
+						<span class="demo--checkbox demo--radioInput"></span><?= quiz_choicesB($quiz);?></label>
+					</label>
+					<label class="demo--label">
+						<input class="demo--radio" type="checkbox" name="choice" value="C">
+						<span class="demo--checkbox demo--radioInput"></span><?= quiz_choicesC($quiz);?></label>
+					</label>
+					<label class="demo--label">
+						<input class="demo--radio" type="checkbox" name="choice" value="D">
+						<span class="demo--checkbox demo--radioInput"></span><?= quiz_choicesD($quiz);?></label>
+					</label>
+					<!-- <label><input type="checkbox" name="choice" value="A" /><?= quiz_choicesA($quiz);?></label><br />
 					<label><input type="checkbox" name="choice" value="B" /><?= quiz_choicesB($quiz);?></label><br />
 					<label><input type="checkbox" name="choice" value="C" /><?= quiz_choicesC($quiz);?></label><br />
-					<label><input type="checkbox" name="choice" value="D" /><?= quiz_choicesD($quiz);?></label><br />
+					<label><input type="checkbox" name="choice" value="D" /><?= quiz_choicesD($quiz);?></label><br /> -->
 
 					<div class="submit">
 						<input class="button checkAnswer" type="submit" value="Submit" />
