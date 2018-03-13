@@ -71,7 +71,7 @@ h5 {
 }
 
 .gray-bg {
-  color: #a7aaab;
+  color: #343535;
   background-color: #f3f3f4;
 }
 
@@ -132,33 +132,6 @@ h5 {
   width:30px;
 }
 
-#newQuiz {
-	position: fixed;
-	top: 10%;
-	right: 0%;
-	width: 300px;
-	margin-top: 50px;
-	margin-right: 100px;
-	text-align: left;
-	background-color: #E5E7E4;
-}
-#newQuiz > input, textarea {
-	display: block;
-}
-
-#newquizdiv{
-	position: fixed;
-	background-color:#E5E7E4; 
-	margin-top: 10px;
-	border-color: #e7eaec;
-  border-image: none;
-  border-style: solid solid none;
- 	border-radius: 20px;
-  border-width: 1px 0;
-	height: 500px;
-	width: 380px;
-}
-
 #addquizButton{
   margin-left: 50px;
   width: 100px;
@@ -200,6 +173,12 @@ h5 {
   float: right;
   margin-right: 10px;
   font-size: 30px;
+}
+
+#countdown_gly{
+  float: right;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 #quiz_dipth{

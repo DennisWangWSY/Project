@@ -15,6 +15,7 @@ shuffle($num);
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 	<link href="css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -30,12 +31,6 @@ shuffle($num);
 						print "for " . get_name($_SESSION["login"]);
 					?>
 				</span>
-				<div class="checkbox checkbox-primary">
-					<input type="checkbox">
-					<label>
-						Primary
-					</label>
-				</div>
 			</div>
 		</form>
 	</div>
@@ -64,11 +59,12 @@ shuffle($num);
 			?>
 			<div class="form_style" id="<?= $i?>">
 				<form class="form_style">
-					<div id= "countdown" class="countdown"></div>
+					<div id= "countdown" class="countdown">  </div>
+					<span id= "countdown_gly" class="glyphicon glyphicon-time"></span>
 					<div id="quizing_number">Quiz #<?= $i?></div>
 					<div id="quiz_dipth"></div>
 					<h1 id="quiz_difficulty">Difficulty: <?= quiz_difficulty($quiz);?> /10
-					<span id="quiz_domain">     Domain: <?= quiz_domain($quiz);?></h1>
+					<span id="quiz_domain"  class="bg-info">Domain: <?= quiz_domain($quiz);?></h1>
 					<div id="quize_centent"><?= quiz_content($quiz);?></div>
 		
 					<input type="hidden" name="id" value="<?= $num[$i-1]?>"/>
