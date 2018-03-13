@@ -187,3 +187,27 @@ h5 {
 #quit,#myHome{
   margin-top: 10px;
 }
+
+#quizing_number {
+  font-weight: bolder;
+  font-family: Georgia;
+  font-size: 30px;
+  color: #666666;
+  text-align: left;
+}
+
+#countdown{
+  float: right;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+#quiz_dipth{
+ height:1px;
+ width:100%;
+ background:#ffffff;
+}
+
+#quiz_difficulty{
+  text-align: center;
+}
