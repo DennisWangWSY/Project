@@ -35,7 +35,15 @@
                 <p class="text-muted text-center"><small>Do not have an account?</small></p>
                 <a class="btn  btn-primary" href="signup.php">Create an account</a>
             </form>
-            <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small> </p>
+
+                    <form class="form_style" method="post" action="quiz.php">
+            <p class="text-muted text-center"><small>Start as visitor!</small></p>
+            <div class="submit">
+                <input class="btn  btn-primary" type="submit" value="Quiz Me Now!" />
+            </div>
+        </form>
+
+            <p class="m-t"> <small>This is a web app for users to quiz base on PHP &copy; 2018</small> </p>
         </div>
     </div>
 

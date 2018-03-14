@@ -58,11 +58,13 @@ shuffle($num);
 			?>
 			<div class="form_style" id="<?= $i?>">
 				<form class="form_style">
-					<div>Quiz #<?= $i?></div>
-					<div class="countdown"></div>
-					<div><?= quiz_content($quiz);?></div>
-					<div>Difficulty: <?= quiz_difficulty($quiz);?> /10</div>
-					<div>Domain: <?= quiz_domain($quiz);?></div>
+										<div id= "countdown" class="countdown">  </div>
+					<span id= "countdown_gly" class="glyphicon glyphicon-time"></span>
+					<div id="quizing_number">Quiz #<?= $i?></div>
+					<div id="quiz_dipth"></div>
+					<h1 id="quiz_difficulty" class="bg-info">Difficulty: <?= quiz_difficulty($quiz);?> /10
+					<span id="quiz_domain"  class="bg-info">Domain: <?= quiz_domain($quiz);?></h1>
+					<div id="quize_centent"><?= quiz_content($quiz);?></div>
 					<input type="hidden" name="id" value="<?= $num[$i-1]?>"/>
 					<label class="demo--label">
 						<input class="demo--radio" type="checkbox" name="choice" value="A">

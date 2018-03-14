@@ -160,13 +160,60 @@ h5 {
 #quit,#myHome{
   margin-top: 10px;
 }
-.row {
-  width: 80%;
-  float: left;
+
+#quizing_number {
+  font-weight: bolder;
+  font-family: Georgia;
+  font-size: 30px;
+  color: #666666;
+  text-align: left;
 }
-.footer {
-  overflow: none;
+
+#quize_centent{
+  font-size: 30px;
+  font-weight: bolder;
 }
+
+#countdown{
+  float: right;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+#countdown_gly{
+  float: right;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#quiz_dipth{
+ height:1px;
+ width:100%;
+ background:#ffffff;
+}
+
+#quiz_difficulty{
+  text-align: center;
+  font-family: 'New Century Schoolbook';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#error_head{
+  font-size: 50px;
+  font-weight: bolder;
+  padding-left: 30px;
+}
+
+#error_dipth{
+  background-color: #ffffff;
+  padding: 0 10px 10px 10px;
+}
+
+#error_message{
+  margin-top: 8px;
+}
+
 .demo--label{margin:20px 20px 0 0;display:inline-block}
 .demo--radio{display:none}
 .demo--radioInput{background-color:#fff;border:1px solid rgba(0,0,0,0.15);border-radius:100%;display:inline-block;height:16px;margin-right:10px;margin-top:-1px;vertical-align:middle;width:16px;line-height:1}

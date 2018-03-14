@@ -32,29 +32,32 @@
     <title>QuizzMe -- Error</title>
     <meta charset="utf-8" />
     <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-<body>
+<body class="gray-bg">
 	
-	<div id="top_banner">
+	<div id="error_head">
 	
 <?php
 	if ( isset($_SESSION["login"]) ) {
 		$name = get_name($_SESSION["login"]);
 ?>
-		<span class="left"><?=$name?>'s <span id="logo">2DO</span> notes</span>
+		<span><?=$name?>'s <span id="logo">2DO</span> notes</span>
 <?php
 	} else {
 ?>
-		<span class="left">Welcome to <span id="logo">QuizzMe</span></span>
+		<span>Welcome to <span id="logo">QuizzMe</span></span>
 <?php
 	}
 ?>
 	</div>
-	
+		<div id="error_dipth"></div>
+	</div>
 	<div id="content">
 		<form method="get" action="<?=$action?>">
 			<div id="error">
-				<div><?= $message ?></div>
+				<div id="error_message"><?= $message ?></div>
 				<input class="button" type="submit" value="OK" />
 			</div>
 		</form>
