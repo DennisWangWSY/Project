@@ -8,11 +8,11 @@ window.onload = function() {
 		show.style.display = "block";
 	}
 	function next() {
-		var quiz = document.getElementById(current);
-		quiz.style.display = "none";
 		if(current==max)
 			finish();
 		else{
+			var quiz = document.getElementById(current);
+			quiz.style.display = "none";
 			current++;
 			document.getElementById(current).style.display = "block";
 			timeleft = fulltime;
@@ -30,8 +30,8 @@ window.onload = function() {
 
 		var result = document.getElementById("result");
 		var result_form = result.querySelector("form");
-		result.style.display = "block";
 		document.getElementById("score").innerHTML = score;
+		document.getElementById("quiz").style.display="inline";
 		document.getElementById("quiz").onclick = function() {
 			result_form.action = "quiz.php";
 		};
@@ -42,12 +42,14 @@ window.onload = function() {
 		}
 		if(document.getElementById("myHome"))
 		{
+			document.getElementById("myHome").style.display="inline";
 			document.getElementById("myHome").onclick = function() {
 				result_form.action = "my.php";
 			};
 		} else{
+			document.getElementById("main").style.display="inline";
 			document.getElementById("main").onclick = function() {
-			result_form.action = "home.php";
+				result_form.action = "home.php";
 			};
 		}
 	}
@@ -89,6 +91,7 @@ window.onload = function() {
 		if(response=="y"){
 			button.className = "correct";
 			score++;
+			document.getElementById("score").innerHTML = score;
 			quiz_correct.push(current-1);
 		}
 		else 
@@ -98,6 +101,9 @@ window.onload = function() {
 	function startQuiz() {
 		buttonDiv.style.display = "block";
 		next();
+		var result = document.getElementById("result");
+		var result_form = result.querySelector("form");
+		result.style.display = "block";
 		return false;
 	}
 
@@ -154,4 +160,11 @@ window.onload = function() {
 	for(var i=0; i<div_countdowns.length; i++)
 		div_countdowns[i].innerHTML = fulltime;
 
+	document.getElementById("quiz").style.display="none";
+	if(document.getElementById("myHome"))
+	{
+		document.getElementById("myHome").style.display="none";
+	} else{
+		document.getElementById("main").style.display="none";
+	}
 }

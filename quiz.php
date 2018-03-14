@@ -52,6 +52,22 @@ shuffle($num);
 				</div>
 			</form>
 		</div>
+		<div class="form_style" id="result">
+			<form class="form_style">
+				<div>Your Score is :</div>
+				<div id="score">0</div>
+				<div class="submit">
+					<input id="quiz" class="btn btn-info" type="submit" value="Start Again" />
+					<?php  
+					if(isset($_SESSION["login"])){?>
+					<input id="myHome" class="btn btn-info" type="submit" value="Back" />
+					<?php }
+					else {?>
+					<input id="main" class="btn btn-info" type="submit" value="Back" />
+					<?php }?>
+				</div>
+			</form>
+		</div>
 		<?php
 		for($i=1; $i<=10; $i++){
 			$quiz = file($num[$i-1], FILE_IGNORE_NEW_LINES);
@@ -82,11 +98,6 @@ shuffle($num);
 						<input class="demo--radio" type="checkbox" name="choice" value="D">
 						<span class="demo--checkbox demo--radioInput"></span><?= quiz_choicesD($quiz);?></label>
 					</label>
-					<!-- <label><input type="checkbox" name="choice" value="A" /><?= quiz_choicesA($quiz);?></label><br />
-					<label><input type="checkbox" name="choice" value="B" /><?= quiz_choicesB($quiz);?></label><br />
-					<label><input type="checkbox" name="choice" value="C" /><?= quiz_choicesC($quiz);?></label><br />
-					<label><input type="checkbox" name="choice" value="D" /><?= quiz_choicesD($quiz);?></label><br /> -->
-
 					<div class="submit">
 						<input class="button checkAnswer" type="submit" value="Submit" />
 					</div>
@@ -95,22 +106,7 @@ shuffle($num);
 			<?php
 		}
 		?>
-		<div class="form_style" id="result">
-			<form class="form_style">
-				<div>Result</div>
-				<div id="score"></div>
-				<div class="submit">
-					<input id="quiz" class="btn btn-info" type="submit" value="Start Another Quiz" />
-					<?php  
-					if(isset($_SESSION["login"])){?>
-					<input id="myHome" class="btn btn-info" type="submit" value="Back To My Home" />
-					<?php }
-					else {?>
-					<input id="main" class="btn btn-info" type="submit" value="Back To Home" />
-					<?php }?>
-				</div>
-			</form>
-		</div>
+
 		<div class="buttons">
 			<button name="1" disabled="disabled">1</button>
 			<button name="2" disabled="disabled">2</button>

@@ -152,12 +152,12 @@ h5 {
   font-weight: bolder;
   color: #666666;
 }
-#start,#quit,#myHome,#quiz{
+#start,#quit,#myHome,#quiz,#main{
   border-radius: 10px 10px 10px 10px;
   width: 50%;
 }
 
-#quit,#myHome{
+#quit,#myHome,#main{
   margin-top: 10px;
 }
 
@@ -212,6 +212,16 @@ h5 {
 
 #error_message{
   margin-top: 8px;
+}
+
+#result {
+  width: 30%;
+  margin-right: 50px;
+  float: right;
+}
+
+.buttons {
+  margin-left: 15%;
 }
 
 .demo--label{margin:20px 20px 0 0;display:inline-block}
