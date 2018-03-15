@@ -74,7 +74,7 @@ shuffle($num);
 			?>
 			<div class="form_style" id="<?= $i?>">
 				<form class="form_style">
-										<div id= "countdown" class="countdown">  </div>
+					<div id= "countdown" class="countdown">  </div>
 					<span id= "countdown_gly" class="glyphicon glyphicon-time"></span>
 					<div id="quizing_number">Quiz #<?= $i?></div>
 					<div id="quiz_dipth"></div>

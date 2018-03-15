@@ -51,13 +51,24 @@ $rightcount = $leftcount;
                     </button>
                     <h4 class="modal-title" id="myModalLabel"></h4>
                 </div>
-                <div class="modal-body" id = "difficulty"></div>
-                <div class="modal-body" id = "content"></div>
-                <div class="modal-body" id = "domain"></div>
-                <div class="modal-body" id = "a"></div>
-                <div class="modal-body" id = "b"></div>
-                <div class="modal-body" id = "c"></div>
-                <div class="modal-body" id = "d"></div>
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <div>
+                            <form>  
+                                <div class="quiz_title">
+                                    <span id="domain"></span> -- Difficulty: <span id="difficulty"></span>
+                                </div>  
+                                <ul>
+                                    <li><span class="todo" id="content"></span></li>
+                                    <li><span class="todo" id="a"></span></li>
+                                    <li><span class="todo" id="b"></span></li>
+                                    <li><span class="todo" id="c"></span></li>
+                                    <li><span class="todo" id="d"></span></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <div class="modal-footer"></div>
             </div>
         </div>
