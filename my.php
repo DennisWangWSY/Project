@@ -91,8 +91,7 @@ $rightcount = $leftcount;
 
     <div class="wrapper">
         <div class="wrapper" id="board">
-                <h1>Hints</h1>
-                <h2>Each block on the left is a quiz record</h2>
+                <h1>Personal Quiz Records on the left</h1>
                 <h2>Click on the quiz id to review the quiz!</h2>
         </div>
 
@@ -110,7 +109,6 @@ $rightcount = $leftcount;
                                 <div class="quiz_title">
                                     Score:
                                     <?= recordScore($recordContent) ?>
-                                    <input id="delete_quiz" class="btn btn-warning btn-sm" type="submit" name="delete_quiz" value="X" quiz_id="<?= $quizs[$k-1]; ?>" title="delete this quiz"/>
                                 </div>	
 
                                 <ul>
@@ -160,8 +158,6 @@ $rightcount = $leftcount;
                                 <div class="quiz_title">
                                     Score:
                                     <?= recordScore($recordContent) ?>
-
-                                    <input id="delete_quiz" class="btn btn-warning btn-sm" type="submit" name="delete_quiz" value="X" quiz_id="<?= $quizs[$k-1]; ?>" title="delete this quiz"/>
                                 </div>
 
                                 <ul>
