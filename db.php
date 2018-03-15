@@ -20,7 +20,7 @@ $k = 0;
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Blog</title>
+    <title>QuizMe | DB</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -45,7 +45,7 @@ $k = 0;
     <div id="wrapper">
         <div id="page-wrapper" class="gray-bg">
             <div>
-                <span id="dbhead1">Welcome to Quize Home.     </span>
+                <span id="dbhead1">Welcome to Quize Database.     </span>
                 <div id="logout">
                  <a href="my.php">
                     <i id="dbhead2" class="fa fa-sign-out"></i><span id="dbhead2">    Home</span>

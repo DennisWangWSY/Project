@@ -6,7 +6,7 @@ shuffle($num);
 ?>
 <html>
 <head>
-	<title>QuizzMe  --  Quiz</title>
+	<title>QuizMe | Start Quiz</title>
 	<meta charset="utf-8" />
 	<link href="css/main.css" type="text/css" rel="stylesheet" />
 	<link href="css/form.css" type="text/css" rel="stylesheet" />

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login</title>
+    <title>QuizMe | Login</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
