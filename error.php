@@ -23,7 +23,7 @@
 		$action = "signup.php";		
 	} else { # type === nologin
 		$message = "You must sign in to use this feature";
-		$action = "sign_in_form.php";
+		$action = "home.php";
 	}
 ?>
 <!DOCTYPE html>
