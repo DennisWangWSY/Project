@@ -1,0 +1,23 @@
+#board{
+    float: right;
+    top: 5%;
+    right: 0%;
+    width: 20%;
+    text-align: left;
+    background-color: #E5E7E4;
+    border-radius: 20px;
+}
+#board h2 {
+	font-family: 'Lucida Console';
+	color: #2B3F26;
+	font-size: 20px;
+}
+#board h1 {
+	color: #1D1154;
+	font-family: Georgia;
+	font-size: 40px;
+}
+.row {
+    width: 80%;
+    overflow: hidden;
+}

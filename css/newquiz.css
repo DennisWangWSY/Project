@@ -9,6 +9,7 @@
 }
 .row {
     width: 80%;
+    overflow: hidden;
 }
 #contact-form {
     background-color:#F2F7F9;
