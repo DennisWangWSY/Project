@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	include("include/util.php");
 	
 	$type = $_GET["type"];
@@ -23,7 +22,7 @@
 		$action = "signup.php";		
 	} else { # type === nologin
 		$message = "You must sign in to use this feature";
-		$action = "sign_in_form.php";
+		$action = "home.php";
 	}
 ?>
 <!DOCTYPE html>
@@ -37,31 +36,17 @@
   </head>
 <body class="gray-bg">
 	
-	<div id="error_head">
-	
-<?php
-	if ( isset($_SESSION["login"]) ) {
-		$name = get_name($_SESSION["login"]);
-?>
-		<span><?=$name?>'s <span id="logo">2DO</span> notes</span>
-<?php
-	} else {
-?>
-		<span>Welcome to <span id="logo">QuizzMe</span></span>
-<?php
-	}
-?>
-	</div>
-		<div id="error_dipth"></div>
-	</div>
-	<div id="content">
-		<form method="get" action="<?=$action?>">
+	<div class="middle-box text-center">
+		<div>
+                <p class="logo-name">QuizzMe</p>
+		<form id="error_form" method="get" action="<?=$action?>">
 			<div id="error">
 				<div id="error_message"><?= $message ?></div>
-				<input class="button" type="submit" value="OK" />
+				<input class="btn btn-info" type="submit" value="BACK" />
 			</div>
 		</form>
 		
 </div>
+        </div>
 </body>
 </html>

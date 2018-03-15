@@ -64,26 +64,23 @@ $rightcount = $leftcount;
     </div>
     <div id="wraper">
         <div id="page-wrapper" class="gray-bg"><div>
+                        <a id="logout_btn" href="logout.php" type="button" class="btn btn-primary">
+                Logout
+            </a>
+                        <a id="quize_btn" href="quiz.php" type="button" class="btn btn-primary">
+                Start quiz
+            </a>
+
+            <a id="db_btn" href="db.php" type="button" class="btn btn-primary">
+                Manage quiz
+            </a>
+
         <span id="dbhead1">
         <?php  
         if(isset($_SESSION["login"]))
             print $_SESSION["login"] . "'s Home";
         ?>
         </span>
-        <div id="logout">
-            <a href="quiz.php" type="button" class="btn-primary">
-                Start quiz
-            </a>
-
-            <a href="db.php" type="button" class="btn-primary">
-                Manage quiz
-            </a>
-
-            <a href="logout.php" type="button" class="btn-primary">
-                Logout
-            </a>
-
-        </div>
     </div>
     <div id="dipth">
         <div class="col-lg-10"></div>

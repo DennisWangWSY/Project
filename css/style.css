@@ -98,6 +98,12 @@ h5 {
   float: right;
 }
 
+#quize_btn,#db_btn,#logout_btn{
+  float: right;
+  width: 100px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
 
 #dipth{
   background-color: #ffffff;
@@ -212,6 +218,10 @@ h5 {
 
 #error_message{
   margin-top: 8px;
+}
+
+#error_form{
+  background-color: #e7eaec;
 }
 
 #result {
