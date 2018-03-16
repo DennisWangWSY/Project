@@ -99,16 +99,30 @@ $rightcount = $leftcount;
 
     <div class="wrapper">
         <div class="wrapper" id="board">
-                <h1>Personal Quiz Records on the left</h1>
-                <h2>Click on the quiz id to review the quiz!</h2>
+            <div class="col-md-12 column">
+                <div class="jumbotron">
+                    <h1>
+                        Quiz report
+                    </h1>
+                    <p>
+                        Personal Quiz Records on the left
+                    </p>
+                    <ul>
+                        <li><strong>Date:</strong>The time when the quiz happend</li>
+                        <li><strong>Quiz:</strong>Quiz you did in this record</li>
+                        <li><strong>Correct:</strong>Those you were corrected</li>
+                        <li><strong>Click on the id to review the quiz!</strong></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="row">
             <div id="left" class="col-lg-6">
-            <?php
-              for($i = 0; $i < $leftcount; $i++){
-                $recordContent = file($records[$i], FILE_IGNORE_NEW_LINES);
-            ?>
+                <?php
+                for($i = 0; $i < $leftcount; $i++){
+                    $recordContent = file($records[$i], FILE_IGNORE_NEW_LINES);
+                ?>
 
                 <div class="ibox">
                     <div class="ibox-content">
@@ -117,35 +131,36 @@ $rightcount = $leftcount;
                                 <div class="quiz_title">
                                     Score:
                                     <?= recordScore($recordContent) ?>
-                                </div>	
-
-                                <ul>
-                                    <li>Data:<?= basename($records[$i]) ?></li>
-                                    <li>Quiz:
-                                        <?php
-                                        $arr = recordQuiz($recordContent);
-
-                                        for($j=0; $j<count($arr); $j++) {
-                                            ?>
-                                            <a class="showmodal" data-target="#myModal" data-toggle="modal">
-                                                <?php
-                                                print $arr[$j] . " ";
-                                            }
-                                            ?>
-                                            </a>
-                                    </li>
-                                    <li>Correct: <?php
+                                </div>
+                                <div class="panel-footer">
+                                    Date:<?= recordTime(basename($records[$i])) ?>
+                                </div>
+                                <div class="panel-footer">
+                                    Quiz:
+                                    <?php
+                                    $arr = recordQuiz($recordContent);
+                                    for($j=0; $j<count($arr); $j++) {
+                                        ?>
+                                    <a class="showmodal" data-target="#myModal" data-toggle="modal">
+                                    <?php
+                                        print $arr[$j] . ". ";
+                                        }
+                                    ?>
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    Correct: 
+                                    <?php
                                     $arr = recordCorrect($recordContent);
                                     for($j=0; $j<count($arr); $j++) {
-                                            ?>
-                                            <a class="showmodal" data-target="#myModal" data-toggle="modal">
-                                                <?php
-                                                print $arr[$j] . " ";
-                                            }
-                                            ?>
-                                            </a>
-                                    </li>
-                                </ul>
+                                        ?>
+                                        <a class="showmodal" data-target="#myModal" data-toggle="modal">
+                                            <?php
+                                            print $arr[$j] . ". ";
+                                        }
+                                        ?>
+                                    </a>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -155,10 +170,10 @@ $rightcount = $leftcount;
                 ?>
             </div>
             <div id="right" class="col-lg-6">
-            <?php
-            for($i = $rightcount; $i < count($records); $i++){
-                $recordContent = file($records[$i], FILE_IGNORE_NEW_LINES);
-            ?>
+                <?php
+                for($i = $rightcount; $i < count($records); $i++){
+                    $recordContent = file($records[$i], FILE_IGNORE_NEW_LINES);
+                ?>
                 <div class="ibox">
                     <div class="ibox-content">
                         <div id="content">
@@ -167,35 +182,36 @@ $rightcount = $leftcount;
                                     Score:
                                     <?= recordScore($recordContent) ?>
                                 </div>
+                                <div class="panel-footer">
+                                    Date:<?= recordTime(basename($records[$i])) ?>
+                                </div>
 
-                                <ul>
-                                    <li>Data:<?= basename($records[$i]) ?></li>
-                                    <li>Quiz:
+                                <div class="panel-footer">
+                                    Quiz:
+                                    <?php
+                                    $arr = recordQuiz($recordContent);
+                                    for($j=0; $j<count($arr); $j++) {
+                                        ?>
+                                    <a class="showmodal" data-target="#myModal" data-toggle="modal">
                                         <?php
-                                        $arr = recordQuiz($recordContent);
-
-                                        for($j=0; $j<count($arr); $j++) {
-                                            ?>
-                                            <a class="showmodal" data-target="#myModal" data-toggle="modal">
-                                                <?php
-                                                print $arr[$j] . " ";
+                                            print $arr[$j] . ". ";
                                             }
-                                            ?>
-                                        </a>
-
-                                    </li>
-                                    <li>Correct: <?php
+                                        ?>
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    Correct: 
+                                    <?php
                                     $arr = recordCorrect($recordContent);
                                     for($j=0; $j<count($arr); $j++) {
-                                            ?>
-                                            <a class="showmodal" data-target="#myModal" data-toggle="modal">
-                                                <?php
-                                                print $arr[$j] . " ";
-                                            }
-                                            ?>
-                                            </a>
-                                    </li>
-                                </ul>
+                                    ?>
+                                    <a class="showmodal" data-target="#myModal" data-toggle="modal">
+                                        <?php
+                                            print $arr[$j] . ". ";
+                                        }
+                                        ?>
+                                    </a>
+                                </div>
                             </form>
                         </div>
                     </div>

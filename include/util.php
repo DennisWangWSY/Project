@@ -16,8 +16,16 @@ function connectDB() {
 function userdbpath() {
 	return "userDB/";
 }
+
 function recordpath($login) {
 	return userdbpath() . $login . "/records/";
+}
+function recordTime($str){
+	$arr = explode("_", $str);
+	
+	$time = $arr[2] . "." . $arr[1] . "." . $arr[0] . ".  " . $arr[3] . ":" . $arr[4] . ":" . $arr[5] . " in " . $arr[6] . ".";
+	return $time;
+
 }
 function recordScore($record) {
 	return $record[0];
