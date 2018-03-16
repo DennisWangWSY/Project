@@ -28,7 +28,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>QuizzMe -- Error</title>
+    <title>QuizMe -- Error</title>
     <meta charset="utf-8" />
     <link href="css/main.css" type="text/css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
 	
 	<div class="middle-box text-center">
 		<div>
-                <p class="logo-name">QuizzMe</p>
+                <p class="logo-name">QuizMe</p>
 		<form id="error_form" method="get" action="<?=$action?>">
 			<div id="error">
 				<div id="error_message"><?= $message ?></div>
@@ -46,7 +46,7 @@
 			</div>
 		</form>
 		
-</div>
-        </div>
+		</div>
+    </div>
 </body>
 </html>

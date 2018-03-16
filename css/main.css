@@ -109,14 +109,6 @@ input[type="checkbox"] {
 input[type="text"] {
 	border: none;
 }
-
-/*#logout {
-	text-decoration: none;
-	position: fixed;
-	bottom: 50px;
-	right: 50px;
-}*/
-
 #newQuiz {
 	position: fixed;
 	top: 10%;

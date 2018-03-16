@@ -1,9 +1,3 @@
-<!--
-Assignment #5
-ID:2017229052 Name:Wang Shanyu (Dennis)
-
-This php file is to handle the sign_up operation.
--->
 <?php
 include("include/util.php");
 $first = htmlspecialchars($_POST["firstname"]);

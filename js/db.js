@@ -64,10 +64,6 @@ window.onload = function() {
 		
 		newform.className = "list left";
 		
-		// var newinput = document.createElement("input");
-		// newinput.setAttribute("type", "hidden");
-		// newinput.setAttribute("name", "todo_id");
-		// newinput.setAttribute("value", quiz_id);
 		var newdiv = document.createElement("div");
 		newdiv.className = "quiz_title";
 		newdiv.innerHTML = domain + " -- Difficulty: " + diff;

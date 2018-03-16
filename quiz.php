@@ -120,4 +120,4 @@ shuffle($num);
 			<button name="10" disabled="disabled">10</button>
 		</div>
 	</body>
-	</html>
+</html>
